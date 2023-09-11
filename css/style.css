@@ -9,21 +9,30 @@
   --color-web: #4d5ae5;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
   color: var(--color-set);
   background-color: var(--color-non);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  max-width: 1158px;
 }
 
 .nav-link {
   color: var(--color-web);
   font-family: 'Raleway', sans-serif;
+  align-items: center;
   letter-spacing: 0.03em;
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
   font-size: 18px;
+  padding: 25.5px 76px 25.5px;
+  display: block; 
 }
 
 .logo-web {
@@ -32,7 +41,38 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+ max-width: 1158px;
+ margin: 0 auto;
+ padding: 0 32px;
+}
+
+.link-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabl-nav {
+  display: flex;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 /*link*/
+
+.div-cocials {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0 24px;
+}
+
+.socials-info {
+  display: flex;
+  gap: 40px;
+}
 
 a {
   text-decoration: none;
@@ -40,14 +80,26 @@ a {
   
   ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
   }
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+img{
+  display: block;
+}
 
 .anav-priority {
   color: var(--color-prymary);
+  display: inline-block;
   letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.5;
   font-size: 16px;
+  padding: 24px 0 24px;
 }
 
 .anav-priority:hover,
@@ -87,7 +139,11 @@ a {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-}
+  text-align: center;
+  margin: 0 auto;
+  width: 496px;
+  }
+
 
 .button-ven {
   color: var(--color-non);
@@ -99,6 +155,8 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  border-radius: 4px;
+  margin: 308;
 }
 
 .button-ven:hover,
@@ -113,6 +171,7 @@ a {
 .advantages-section {
   color: var(--color-prymary);
   font-size: 0.02em;
+  padding: 64px;
 }
 
 .information {
@@ -120,6 +179,16 @@ a {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .dok-startegy {
@@ -141,6 +210,7 @@ a {
 .ourteam-section {
   color: var(--color-secondary);
   background-color: var(--color-secondary);
+  padding: 64px;
 }
 
 .men-ourteam {
@@ -178,6 +248,10 @@ a {
 
 /*our-porfolio*/
 
+.ourportfolio-section {
+  padding: 64px;
+}
+
 .our-portfolio {
   color: var(--color-prymary);
   font-size: 36px;
@@ -212,6 +286,7 @@ a {
 
 .footer {
   background-color: var(--color-prymary);
+  padding: 64px;
 }
 
 .image-button {

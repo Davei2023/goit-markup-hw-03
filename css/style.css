@@ -133,13 +133,22 @@ gap: 40px;
     letter-spacing: 0.02em;
     text-align: center;
     line-height: 1.07;
+    padding: 188px 0 188px;
   }
-  
+
+  .effective-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .hiro-title {
     color: var(--color-non);
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    padding: 0 0 48px;
   }
   
   .button-ven {
@@ -152,6 +161,9 @@ gap: 40px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    min-width: 169px;
+    border-radius: 4px;
+    height: 56px;
   }
   
   .button-ven:hover,

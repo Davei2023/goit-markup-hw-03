@@ -248,6 +248,7 @@ padding: 24px 0
     background: var(--color-non);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
       
   .tabl-item {
@@ -315,12 +316,14 @@ padding: 24px 0
   .image-portfolio {
   background: var(--color-non);
   width: calc((100% - 48px) / 3);
+  border: 1px solid var(--CORNFLOWER, #E7E9FC);
   }
   
   .image-tabl {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 32px;
 
   }
 
